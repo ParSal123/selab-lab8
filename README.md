@@ -1,0 +1,1 @@
+For sake of completeness, inside each concrete class, there is a public variable and a private variable, Also a getter for the private variable. In Prototype tests, copying these variables are checked.
