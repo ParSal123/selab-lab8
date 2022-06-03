@@ -13,9 +13,15 @@ public class JFlower implements Flower {
 
     public JFlower() {
     }
+    
+    private JFlower(JFlower target) {
+        super();
+        this.publicVar2 = target.publicVar2;
+        this.privateVar2 = target.privateVar2;
+    }
 
     public Cloneaable clone() {
-        return null;
+        return new JFlower(this);
     }
 
     public int getPrivateVar() {

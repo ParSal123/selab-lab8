@@ -14,8 +14,14 @@ public class Khatmi implements Flower {
     public Khatmi() {
     }
 
+    private Khatmi(Khatmi target) {
+        super();
+        this.publicVar1 = target.publicVar1;
+        this.privateVar1 = target.privateVar1;
+    }
+
     public Cloneaable clone() {
-        return null;
+        return new Khatmi(this);
     }
 
     public int getPrivateVar() {

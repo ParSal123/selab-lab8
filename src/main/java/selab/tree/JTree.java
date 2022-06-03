@@ -18,7 +18,13 @@ public class JTree implements Tree {
     public JTree() {
     }
 
+    private JTree(JTree target) {
+        super();
+        this.publicVar4 = target.publicVar4;
+        this.privateVar4 = target.privateVar4;
+    }
+
     public Cloneaable clone() {
-        return null;
+        return new JTree(this);
     }
 }

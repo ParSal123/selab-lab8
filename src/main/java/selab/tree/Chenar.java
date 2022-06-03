@@ -14,8 +14,14 @@ public class Chenar implements Tree {
     public Chenar() {
     }
 
+    private Chenar(Chenar target) {
+        super();
+        this.publicVar3 = target.publicVar3;
+        this.privateVar3 = target.privateVar3;
+    }
+
     public Cloneaable clone() {
-        return null;
+        return new Chenar(this);
     }
 
     public int getPrivateVar() {
