@@ -1,4 +1,6 @@
 package selab.tree;
 
-public interface Tree {
+import selab.clone.Cloneaable;
+
+public interface Tree extends Cloneaable {
 }

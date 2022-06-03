@@ -1,4 +1,6 @@
 package selab.flower;
 
-public interface Flower {
+import selab.clone.Cloneaable;
+
+public interface Flower extends Cloneaable {
 }
